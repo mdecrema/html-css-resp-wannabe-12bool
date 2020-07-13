@@ -6,7 +6,8 @@
 
 
 .container-lezioni {
-    min-height: 300px;
+    height: 400px;
+    margin: auto;
 }
 
 .container-lezioni::after, .container-steps::after {
@@ -23,21 +24,35 @@ h2 {
 }
 
 .lezioni-left {
+    min-height: 400px;
     float: left;
     position: relative;
+}
+
+.lezioni-left::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .lezioni-right {
+    min-height: 400px;
     float: left;
     position: relative;
 }
 
-.float {
-    float: left;
+.lezioni-right::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
-.lezioni img, .steps img {
-    width: 50%;
+.img-lez {
+    margin: auto;
+}
+
+.lezioni img {
+    width: 100%;
     height: 200px;
     margin: auto;
 }

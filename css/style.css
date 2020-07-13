@@ -9,7 +9,7 @@
     min-height: 300px;
 }
 
-.container-lezioni::after {
+.container-lezioni::after, .container-steps::after {
     content: "";
     display: block;
     clear: both;
@@ -32,7 +32,11 @@ h2 {
     position: relative;
 }
 
-.lezioni img {
+.float {
+    float: left;
+}
+
+.lezioni img, .steps img {
     width: 50%;
     height: 200px;
     margin: auto;
@@ -56,8 +60,7 @@ h2 {
     margin-top: 5%;
 }
 
-@media screen and (max-width: 420px) {
-    .steps-left, .steps-central, .steps-right {
-        float: left;
-    }
+.steps {
+    margin: auto;
 }
+
